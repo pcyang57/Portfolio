@@ -1,0 +1,145 @@
+:root {
+    --airforceblue: #5d8aa8;
+    --independence: #a3c1ad;
+    --heliotrope-gray: #faebd7;
+    --almond: #efdecd;
+    --isabelline: #f2e9e4ff; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;       
+}
+
+* {
+    background-color: white;
+}
+
+body {
+    background-color: var(--almond);
+    color: var(--airforceblue);
+    display:flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    font-size: 16px;
+    margin : 1em solid var(--heliotrope-gray);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: .5em;
+    gap: 1em;
+}
+
+.header {
+    background-color: var(--airforceblue);
+    color: var(--isabelline);
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25em;
+    border: 9px solid var(--heliotrope-gray);
+}
+
+#myName {
+    color: var(--isabelline);
+    text-shadow: .4em .4em 1em grey;
+    line-height: 1em;
+}
+
+#aboutMe {
+    color: var(--isabelline);
+    background-color: var(--independence);
+    border: 9px solid var(--heliotrope-gray);
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.headerImage {
+    position: relative;
+    display: flex;
+    padding: 1.25em;
+    border: 9px solid var(--heliotrope-gray);
+    height: 300px;
+}
+
+.headerImage::before {
+    content: "";
+    background-image: url("images/pexels-pratik-gupta-2748716.png");
+    background-color: var(--independence);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .75;
+}
+
+#myPicture {
+    border-radius: 12em;
+    position: relative;
+    opacity: 1.25;
+}
+
+section.container {
+    padding: 1.25em;
+    border: 9px solid var(--heliotrope-gray);
+    background-color: var(--isabelline);
+    width: auto;
+    display: inline-block;
+    text-align: justify;
+    align-items: center;
+}
+
+.containerSmall {
+    padding: 1.25em;
+    border: 9px solid var(--heliotrope-gray);
+    width: auto;
+    display: inline-block;
+    text-align: justify;
+}
+
+#largeProject {
+    display: bloc;;
+    width: fit-content;
+}
+
+.smallProject img {
+    height: 30em;
+    width: 40em;
+}
+
+.contactMe {
+    text-align: center;
+    background-color: var(--independence);
+    padding: 1.25em;
+    border: 9px solid var(--heliotrope-gray);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contactMe a {
+    color: var(--isabelline);
+    padding: 1em;
+}
+
+.contactMe a:hover {
+    color: var(--space-cadet);
+
+}
+
+ul li a {
+    color: var(--isabelline);
+}
+
+ul li a:hover {
+    color: var(--silver-pink);
+}
+@media (min-width: 450px){
+    #containerSmall img{
+        display: block;
+    }
+}
